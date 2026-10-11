@@ -69,11 +69,19 @@ body {
   font-size: 16px;
   line-height: 1.6;
   background-color: var(--bg);
+}
+
+/* Background lives on its own fixed layer: painted once, composited on scroll */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background-image:
     radial-gradient(1100px 700px at 10% -10%, rgba(255, 255, 255, 0.12), transparent 60%),
     radial-gradient(900px 700px at 110% 105%, rgba(40, 20, 5, 0.32), transparent 60%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
-  background-attachment: fixed;
 }
 
 img {
@@ -143,12 +151,10 @@ a {
   gap: 24px;
   padding: 10px 10px 10px 14px;
   margin-bottom: 48px;
-  background: var(--glass-bg);
+  background: rgba(139, 95, 59, 0.94);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-pill);
   box-shadow: var(--shadow-card);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   position: sticky;
   top: 14px;
   z-index: 50;
@@ -427,10 +433,7 @@ h1 {
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-card);
   padding: 24px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   box-shadow: var(--shadow-card);
-  transition: transform 0.25s var(--ease), box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .card h2 {
@@ -507,10 +510,29 @@ h1 {
   color: inherit;
 }
 
+.card--link {
+  transition: transform 0.25s var(--ease), border-color 0.25s ease;
+}
+
+/* Bigger shadow pre-rendered on a pseudo-element; hover only fades it in */
+.card--link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: var(--shadow-hover);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
 .card--link:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
   border-color: var(--glass-border-hover);
+}
+
+.card--link:hover::before {
+  opacity: 1;
 }
 
 .card--link:focus-visible {
@@ -1157,7 +1179,6 @@ a.contact-item:hover {
     background: none;
     border: 1px solid #ccc;
     box-shadow: none;
-    backdrop-filter: none;
     break-inside: avoid;
   }
 

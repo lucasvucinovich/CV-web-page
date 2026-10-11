@@ -3,107 +3,174 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucas — Education</title>
-
-    <!-- Fonts -->
+    <title data-i18n="title.education">Education — Lucas A. Vucinovich</title>
+    <meta name="description" content="Education of Lucas A. Vucinovich: IE University, University of Michigan and Lycée Franco-Argentin Jean Mermoz." />
+    <meta name="theme-color" content="#976841" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23f4dcb5'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='700' text-anchor='middle' fill='%233f2614'%3ELV%3C/text%3E%3C/svg%3E"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="CSS\style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script>
+      (function () {
+        var d = document.documentElement, l;
+        d.classList.add("js");
+        try { l = localStorage.getItem("cv-lang"); } catch (e) {}
+        if (!l) l = (navigator.language || "").slice(0, 2) === "es" ? "es" : "en";
+        if (l === "es") {
+          d.lang = "es";
+          d.classList.add("i18n-pending");
+          setTimeout(function () { d.classList.remove("i18n-pending"); }, 1500);
+        }
+      })();
+    </script>
   </head>
 
   <body>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
     <div class="wrap">
-      <!-- Header -->
-      <header class="page-header">
-        <div>
-          <h1>Lucas</h1>
-          <p class="subtitle">Education</p>
+      <header class="site-header">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">LV</span>
+          <span class="brand-name">Lucas A. Vucinovich</span>
+        </a>
+        <nav class="site-nav" aria-label="Main" data-i18n-attr="aria-label:nav.label">
+          <a href="aboutme.html" data-i18n="nav.about">About</a>
+          <a href="education.html" aria-current="page" data-i18n="nav.education">Education</a>
+          <a href="projects.html" data-i18n="nav.projects">Experience</a>
+          <a href="skills.html" data-i18n="nav.skills">Skills</a>
+          <a href="certifications.html" data-i18n="nav.achievements">Achievements</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language / Idioma">
+          <button type="button" data-lang="es" lang="es" aria-pressed="false" title="Ver en español">ES</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="true" title="View in English">EN</button>
         </div>
-        <a class="back-link" href="index.html">← Back home</a>
       </header>
 
-      <!-- Content -->
-      <section class="page">
-
-        <!-- 1) Secondary school -->
-        <article class="card page-card">
-          <h2>Lycée Franco-Argentin Jean Mermoz (Buenos Aires, Argentina)</h2>
-          <p>French & Argentinian Baccalaureate — Graduated December 2021</p>
-        </article>
-
-        <!-- 2) IE University -->
-        <article class="card page-card">
-          <h2>IE University (Madrid, Spain)</h2>
-          <p>
-            Dual Degree in Business Administration and Data & Analytics — Expected
-            May 2027
+      <main id="main">
+        <section class="page-hero reveal">
+          <p class="eyebrow" data-i18n="nav.education">Education</p>
+          <h1 data-i18n="edu.title">Business and data, side by side</h1>
+          <p class="lead" data-i18n="edu.lead">
+            A dual degree that combines management with computer science and analytics, an exchange semester
+            focused on human-centered design, and a bilingual French-Argentine foundation.
           </p>
+        </section>
 
-          <h3>Selected coursework</h3>
-          <ul class="coursework-list">
-            <li>Learning to Observe, Experiment and Survey</li>
-            <li>Fundamentals of Probability and Statistics</li>
-            <li>Introduction to Programming for Data Science</li>
-            <li>Financial Accounting</li>
-            <li>Marketing Fundamentals</li>
-            <li>Microeconomics</li>
-            <li>Cost Accounting</li>
-            <li>Corporate Finance</li>
-            <li>Probability & Statistics for Data Management and Analysis</li>
-            <li>Mathematics for Data Management and Analysis</li>
-            <li>Algorithms & Data Structures</li>
-            <li>Programming for Data Management & Analysis</li>
-            <li>Advanced Data Structures and Storage</li>
-            <li>Communication Skills</li>
-            <li>Entrepreneurship</li>
-            <li>Research & Academic Writing Skills</li>
-            <li>AI - Machine Learning Foundations</li>
-            <li>Operating Systems & Parallel Computing</li>
-            <li>Analyzing Social Media</li>
-            <li>AI - Machine Learning & Analytics</li>
-            <li>Big Data Technology</li>
-            <li>Advanced Databases</li>
-            <li>Time Series Analysis</li>
-            <li>Forecasting for Time Series</li>
-            <li>Macroeconomics</li>
-            <li>Organizational Behavior</li>
-            <li>Operations Management</li>
-            <li>Management Control</li>
-            <li>Human Capital Management</li>
-            <li>Startup Bootcamp</li>
-            <li>Recommendation Engines</li>
-            <li>NLP, Text Mining and Semantic Analysis</li>
-            <li>Stream Analytics</li>
-            <li>Data Visualization, Dashboards & Storytelling</li>
-            <li>Strategies for the Multinational Corporation</li>
-            <li>Global Economic Environment</li>
-          </ul>
-        </article>
+        <div class="timeline">
+          <!-- IE University -->
+          <article class="card page-card reveal">
+            <div class="entry-head">
+              <h2>IE University</h2>
+              <span class="entry-meta" data-i18n="edu.ieMeta">2022 – May 2027 (expected) · Madrid, Spain</span>
+            </div>
+            <p class="entry-org" data-i18n="edu.ieDegree">Dual Degree in Business Administration and Data &amp; Analytics</p>
 
-        <!-- 3) University of Michigan -->
-        <article class="card page-card">
-          <h2>University of Michigan — School of Information (Study Abroad)</h2>
-          <p>Exchange — Fall 2025</p>
+            <p class="subhead" data-i18n="edu.keyCourses">Key courses</p>
+            <ul class="tags">
+              <li>AI – Machine Learning &amp; Analytics</li>
+              <li>Operating Systems &amp; Parallel Computing</li>
+              <li>Time Series Analysis &amp; Forecasting</li>
+              <li>Big Data Technology</li>
+              <li>Advanced Databases</li>
+              <li>NLP, Text Mining &amp; Semantic Analysis</li>
+              <li>Recommendation Engines</li>
+              <li>Stream Analytics</li>
+              <li>Corporate Finance</li>
+              <li>Strategies for the Multinational Corporation</li>
+            </ul>
 
-          <h3>Coursework</h3>
-          <ul>
-            <li>SI 338: Advanced Web Design and Accessibility</li>
-            <li>SI 347: Human-Computer Interaction</li>
-            <li>SI 394: Introduction to Automotive UX</li>
-            <li>SI 425: Introduction to User Modeling</li>
-            <li>SI 428: Online Communities</li>
-          </ul>
-        </article>
+            <details class="more">
+              <summary data-i18n="edu.fullCoursework">See full coursework</summary>
+              <ul class="coursework-list">
+                <li>Learning to Observe, Experiment and Survey</li>
+                <li>Fundamentals of Probability and Statistics</li>
+                <li>Introduction to Programming for Data Science</li>
+                <li>Financial Accounting</li>
+                <li>Marketing Fundamentals</li>
+                <li>Microeconomics</li>
+                <li>Cost Accounting</li>
+                <li>Corporate Finance</li>
+                <li>Probability &amp; Statistics for Data Management and Analysis</li>
+                <li>Mathematics for Data Management and Analysis</li>
+                <li>Algorithms &amp; Data Structures</li>
+                <li>Programming for Data Management &amp; Analysis</li>
+                <li>Advanced Data Structures and Storage</li>
+                <li>Communication Skills</li>
+                <li>Entrepreneurship</li>
+                <li>Research &amp; Academic Writing Skills</li>
+                <li>AI – Machine Learning Foundations</li>
+                <li>Operating Systems &amp; Parallel Computing</li>
+                <li>Analyzing Social Media</li>
+                <li>AI – Machine Learning &amp; Analytics</li>
+                <li>Big Data Technology</li>
+                <li>Advanced Databases</li>
+                <li>Time Series Analysis</li>
+                <li>Forecasting for Time Series</li>
+                <li>Macroeconomics</li>
+                <li>Organizational Behavior</li>
+                <li>Operations Management</li>
+                <li>Management Control</li>
+                <li>Human Capital Management</li>
+                <li>Startup Bootcamp</li>
+                <li>Recommendation Engines</li>
+                <li>NLP, Text Mining and Semantic Analysis</li>
+                <li>Stream Analytics</li>
+                <li>Data Visualization, Dashboards &amp; Storytelling</li>
+                <li>Strategies for the Multinational Corporation</li>
+                <li>Global Economic Environment</li>
+              </ul>
+            </details>
+          </article>
 
-      </section>
+          <!-- University of Michigan -->
+          <article class="card page-card reveal">
+            <div class="entry-head">
+              <h2 data-i18n="edu.umName">University of Michigan</h2>
+              <span class="entry-meta" data-i18n="edu.umMeta">Fall 2025 · Ann Arbor, USA</span>
+            </div>
+            <p class="entry-org" data-i18n="edu.umProgram">School of Information <span class="sep">·</span> Study abroad semester</p>
+
+            <p class="subhead" data-i18n="edu.coursework">Coursework</p>
+            <ul class="tags">
+              <li>SI 338: Advanced Web Design and Accessibility</li>
+              <li>SI 247: Human-Computer Interaction</li>
+              <li>SI 394: Introduction to Automotive UX</li>
+              <li>SI 425: Introduction to User Modeling</li>
+              <li>SI 428: Online Communities</li>
+            </ul>
+          </article>
+
+          <!-- Lycée Jean Mermoz -->
+          <article class="card page-card reveal">
+            <div class="entry-head">
+              <h2>Lycée Franco-Argentin Jean Mermoz</h2>
+              <span class="entry-meta" data-i18n="edu.lycMeta">Graduated Dec 2021 · Buenos Aires, Argentina</span>
+            </div>
+            <p class="entry-org" data-i18n="edu.lycDegree">French &amp; Argentine Baccalaureate</p>
+          </article>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span data-year>2026</span> Lucas A. Vucinovich</p>
+        <div class="footer-links">
+          <a href="mailto:lvucinovich.ieu2022@student.ie.edu">Email</a>
+          <a href="https://www.linkedin.com/in/lucas-agustin-vucinovich/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/lucasvucinovich" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </footer>
     </div>
 
-    <script src="JS\main.js"></script>
+    <script src="JS/i18n.js"></script>
+    <script src="JS/main.js"></script>
   </body>
 </html>

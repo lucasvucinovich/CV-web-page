@@ -1,57 +1,163 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas — About</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="title.about">About — Lucas A. Vucinovich</title>
+    <meta name="description" content="About Lucas A. Vucinovich: profile, goals, languages and international experience." />
+    <meta name="theme-color" content="#976841" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23f4dcb5'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='700' text-anchor='middle' fill='%233f2614'%3ELV%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script>
+      (function () {
+        var d = document.documentElement, l;
+        d.classList.add("js");
+        try { l = localStorage.getItem("cv-lang"); } catch (e) {}
+        if (!l) l = (navigator.language || "").slice(0, 2) === "es" ? "es" : "en";
+        if (l === "es") {
+          d.lang = "es";
+          d.classList.add("i18n-pending");
+          setTimeout(function () { d.classList.remove("i18n-pending"); }, 1500);
+        }
+      })();
+    </script>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="CSS\style.css" />
-</head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
-<body>
-  <div class="wrap">
-    <header class="page-header">
-      <div>
-        <h1>Lucas</h1>
-        <p class="subtitle">About Me</p>
-      </div>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">LV</span>
+          <span class="brand-name">Lucas A. Vucinovich</span>
+        </a>
+        <nav class="site-nav" aria-label="Main" data-i18n-attr="aria-label:nav.label">
+          <a href="aboutme.html" aria-current="page" data-i18n="nav.about">About</a>
+          <a href="education.html" data-i18n="nav.education">Education</a>
+          <a href="projects.html" data-i18n="nav.projects">Experience</a>
+          <a href="skills.html" data-i18n="nav.skills">Skills</a>
+          <a href="certifications.html" data-i18n="nav.achievements">Achievements</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language / Idioma">
+          <button type="button" data-lang="es" lang="es" aria-pressed="false" title="Ver en español">ES</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="true" title="View in English">EN</button>
+        </div>
+      </header>
 
-      <a class="back-link" href="index.html">← Back home</a>
-    </header>
+      <main id="main">
+        <section class="page-hero reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">About me</p>
+          <h1 data-i18n="about.title">Where business meets engineering</h1>
+          <p class="lead" data-i18n="about.lead">
+            I like problems that sit between strategy and technology — understanding how an organization really
+            works, then building the software that makes it work better.
+          </p>
+        </section>
 
-    <main class="page">
-      <div class="card page-card">
-        <h2>Summary</h2>
-        <p>
-          Business and data science enthusiast, combining a strong passion for technology with analytical
-          skills and strategic insight. Seeking roles in data analysis, strategic consulting, and
-          technology-driven solutions.
-        </p>
-      </div>
+        <div class="grid">
+          <article class="card page-card card--wide reveal">
+            <h2 data-i18n="about.profileTitle">Profile</h2>
+            <p data-i18n="about.profile1">
+              I'm a Business Administration and Data &amp; Analytics student at IE University in Madrid, with a
+              semester at the University of Michigan's School of Information. My work sits at the intersection of
+              business and engineering: I build AI-powered products end to end, from the first conversation with
+              the people who will use them to production code, tests and deployment.
+            </p>
+            <p data-i18n="about.profile2">
+              My most complete project is <strong>CareLoop</strong>, an AI operations platform I designed and built
+              for a dental clinic in Buenos Aires. Alongside it, I've worked on a digital twin for emergency drone
+              operations, deep-learning research on satellite imagery, and strategy consulting labs with real
+              companies — experiences that taught me to pair analytical rigor with teamwork and clear communication.
+            </p>
+          </article>
 
-      <div class="card page-card">
-        <h2>Eligibility</h2>
-        <ul>
-          <li>Eligible for signing internship agreements through IE University</li>
-          <li>EU work permit</li>
-        </ul>
-      </div>
+          <article class="card page-card reveal">
+            <h2 data-i18n="about.lookingTitle">What I'm looking for</h2>
+            <p data-i18n="about.looking">
+              Internship opportunities in data &amp; AI, product, analytics and technology consulting — teams where
+              I can own problems end to end and turn data into decisions and working software.
+            </p>
+          </article>
 
-      <div class="card page-card">
-        <h2>Languages</h2>
-        <ul>
-          <li>Spanish (Native)</li>
-          <li>English (Fluent)</li>
-          <li>French (Advanced)</li>
-        </ul>
-      </div>
-    </main>
-  </div>
-</body>
+          <article class="card page-card reveal">
+            <h2 data-i18n="about.eligibilityTitle">Eligibility</h2>
+            <ul class="check-list">
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="about.elig1">Eligible to sign internship agreements through IE University</span>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="about.elig2">EU work permit</span>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="about.elig3">Based in Madrid, Spain</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card page-card reveal">
+            <h2 data-i18n="about.languagesTitle">Languages</h2>
+            <ul class="lang-list">
+              <li>
+                <div class="lang-row"><span data-i18n="lang.es">Spanish</span><span data-i18n="lang.native">Native</span></div>
+                <div class="meter" aria-hidden="true"><span style="width: 100%"></span></div>
+              </li>
+              <li>
+                <div class="lang-row"><span data-i18n="lang.en">English</span><span data-i18n="lang.fluent">Fluent</span></div>
+                <div class="meter" aria-hidden="true"><span style="width: 90%"></span></div>
+              </li>
+              <li>
+                <div class="lang-row"><span data-i18n="lang.fr">French</span><span data-i18n="lang.advanced">Advanced</span></div>
+                <div class="meter" aria-hidden="true"><span style="width: 75%"></span></div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card page-card reveal">
+            <h2 data-i18n="about.intlTitle">International experience</h2>
+            <ul>
+              <li data-i18n="about.intl1"><strong>Ann Arbor, USA</strong> — University of Michigan exchange (Aug – Dec 2025)</li>
+              <li data-i18n="about.intl2"><strong>Valencia, Spain</strong> — Nov – Dec 2019</li>
+              <li data-i18n="about.intl3"><strong>Geneva, Switzerland</strong> — Aug – Sep 2018</li>
+              <li data-i18n="about.intl4"><strong>Buenos Aires, Argentina</strong> — French-Argentine bilingual schooling</li>
+            </ul>
+          </article>
+
+          <article class="card page-card card--wide reveal">
+            <h2 data-i18n="about.beyondTitle">Beyond the CV</h2>
+            <ul>
+              <li data-i18n="about.beyond1"><strong>Rugby</strong> — 10 years playing, in a team leadership role; it taught me most of what I know about teamwork and responsibility.</li>
+              <li data-i18n="about.beyond2"><strong>Volunteering</strong> — led a team of 10 volunteers to clean the shores of the Río de la Plata (Buenos Aires, Sep 2021).</li>
+              <li data-i18n="about.beyond3"><strong>Other sports</strong> — golf and tennis, among others.</li>
+            </ul>
+          </article>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span data-year>2026</span> Lucas A. Vucinovich</p>
+        <div class="footer-links">
+          <a href="mailto:lvucinovich.ieu2022@student.ie.edu">Email</a>
+          <a href="https://www.linkedin.com/in/lucas-agustin-vucinovich/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/lucasvucinovich" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="JS/i18n.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
 </html>

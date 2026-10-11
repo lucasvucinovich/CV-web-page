@@ -1,52 +1,239 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas — About</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="title.projects">Experience &amp; Projects — Lucas A. Vucinovich</title>
+    <meta name="description" content="Experience and projects of Lucas A. Vucinovich, including CareLoop, an AI operations platform for a dental clinic." />
+    <meta name="theme-color" content="#976841" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23f4dcb5'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='700' text-anchor='middle' fill='%233f2614'%3ELV%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script>
+      (function () {
+        var d = document.documentElement, l;
+        d.classList.add("js");
+        try { l = localStorage.getItem("cv-lang"); } catch (e) {}
+        if (!l) l = (navigator.language || "").slice(0, 2) === "es" ? "es" : "en";
+        if (l === "es") {
+          d.lang = "es";
+          d.classList.add("i18n-pending");
+          setTimeout(function () { d.classList.remove("i18n-pending"); }, 1500);
+        }
+      })();
+    </script>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="CSS\style.css" />
-</head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
-<body>
-  <div class="wrap">
-    <header class="page-header">
-      <div>
-        <h1>Lucas</h1>
-        <p class="subtitle">About Me</p>
-      </div>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">LV</span>
+          <span class="brand-name">Lucas A. Vucinovich</span>
+        </a>
+        <nav class="site-nav" aria-label="Main" data-i18n-attr="aria-label:nav.label">
+          <a href="aboutme.html" data-i18n="nav.about">About</a>
+          <a href="education.html" data-i18n="nav.education">Education</a>
+          <a href="projects.html" aria-current="page" data-i18n="nav.projects">Experience</a>
+          <a href="skills.html" data-i18n="nav.skills">Skills</a>
+          <a href="certifications.html" data-i18n="nav.achievements">Achievements</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language / Idioma">
+          <button type="button" data-lang="es" lang="es" aria-pressed="false" title="Ver en español">ES</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="true" title="View in English">EN</button>
+        </div>
+      </header>
 
-      <a class="back-link" href="index.html">← Back home</a>
-    </header>
+      <main id="main">
+        <section class="page-hero reveal">
+          <p class="eyebrow" data-i18n="home.cardProjectsTitle">Experience &amp; Projects</p>
+          <h1 data-i18n="proj.title">Building things that get used</h1>
+          <p class="lead" data-i18n="proj.lead">
+            From production software for a real clinic to deep-learning research and strategy consulting —
+            selected work, most recent first.
+          </p>
+        </section>
 
-<main class="page">
-  <div class="card page-card">
-    <h2>Projects</h2>
-    <ul>
-      <li>Operating Systems & Parallel Computing (IE University, Sep - Dec 2024)</li>
-    </ul>
-  </div>
-  <div class="card page-card">
-    <h2>Labs / Experience</h2>
-    <ul>
-      <li>TRASEMISA — IEU Strategy Lab (Jan–Jun 2024): research + data analysis for strategic decisions</li>
-      <li>SEAPLACE — IEU Branding Lab (Jan–Jun 2023): brand identity + strategy documentation</li>
-      <li>Romina Ángela Aragones Dental Clinic (Jun–Aug 2023): brand image + marketing strategy + website prototype</li>
-    </ul>
-  </div>
+        <!-- CareLoop (featured) -->
+        <article id="careloop" class="card featured reveal" aria-labelledby="careloop-title">
+          <div class="featured-head">
+            <span class="badge">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span data-i18n="featured.badge">Featured project</span>
+            </span>
+            <span class="entry-meta" data-i18n="careloop.meta">May – Oct 2026 · Buenos Aires, Argentina</span>
+          </div>
 
-  <div class="card page-card">
-    <h2>Extracurricular</h2>
-    <ul>
-      <li>Volunteering: led a team of 10 to clean River Plate (Buenos Aires, Sep 2021)</li>
-      <li>Sports: rugby (leader 10 years), also golf, tennis, between others</li>
-      <li>International experience: Valencia, Spain (2019); ginebra, switzerland (2018)</li>
-    </ul>
-  </div>
-</main>
+          <h2 id="careloop-title">CareLoop</h2>
+          <p class="featured-sub" data-i18n="careloop.sub">AI operations platform for Clínica Aragonés, a dental clinic</p>
+          <p class="featured-desc" data-i18n="careloop.desc">
+            I designed and built CareLoop end to end: an AI coordination layer that works alongside the clinic's
+            existing records system so that no treatment, referral or follow-up falls through the cracks — and
+            so that doctors spend less time on paperwork and more time with patients.
+          </p>
+
+          <ul class="stats">
+            <li><span class="stat-value">900+</span><span class="stat-label" data-i18n="careloop.stat1">automated tests (Vitest, Playwright)</span></li>
+            <li><span class="stat-value">3</span><span class="stat-label" data-i18n="careloop.stat2">role-based apps for secretaries, doctors and admins</span></li>
+            <li><span class="stat-value" data-i18n="careloop.stat3v">Voice → data</span><span class="stat-label" data-i18n="careloop.stat3">dictation becomes records, quotes and treatment plans</span></li>
+            <li><span class="stat-value">OSDE · AFIP</span><span class="stat-label" data-i18n="careloop.stat4">insurance billing and e-invoicing, automated</span></li>
+          </ul>
+
+          <p class="subhead" data-i18n="careloop.builtTitle">What I built</p>
+          <ul>
+            <li data-i18n="careloop.b1">A coordination layer that tracks multi-step treatments and specialist referrals alongside the clinic's records system.</li>
+            <li data-i18n="careloop.b2">An AI assistant (Claude API, Whisper) that turns doctor dictation into structured clinical records, quotes and treatment plans.</li>
+            <li data-i18n="careloop.b3">Automated patient reminders and no-show follow-ups through the WhatsApp Cloud API.</li>
+            <li data-i18n="careloop.b4">Automated insurance billing and e-invoicing (OSDE, AFIP), with role-based apps for secretaries, doctors and admins.</li>
+            <li data-i18n="careloop.b5">A safety net of 900+ automated unit and end-to-end tests (Vitest, Playwright).</li>
+          </ul>
+
+          <ul class="tags" aria-label="Tech stack" data-i18n-attr="aria-label:proj.stack">
+            <li>Next.js</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Supabase / PostgreSQL</li>
+            <li>Claude API</li>
+            <li>Whisper</li>
+            <li>WhatsApp Cloud API</li>
+            <li>Vercel</li>
+            <li>Vitest</li>
+            <li>Playwright</li>
+          </ul>
+        </article>
+
+        <h2 class="section-title reveal" data-i18n="proj.moreTitle">More projects &amp; experience</h2>
+
+        <div class="timeline">
+          <!-- Digital twin -->
+          <article class="card page-card reveal">
+            <div class="entry-head">
+              <h3 data-i18n="proj.dtTitle">Digital Twin Platform for Emergency Drone Operations</h3>
+              <span class="entry-meta" data-i18n="proj.dtMeta">Feb – Mar 2026 · Madrid</span>
+            </div>
+            <p class="entry-org">HPE CDS Tech Challenge</p>
+            <ul>
+              <li data-i18n="proj.dt1">Built a digital twin platform with real-time telemetry and simulation to improve drone operations and decision-making in emergencies.</li>
+            </ul>
+            <ul class="tags">
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Leaflet</li>
+              <li data-i18n="proj.tagRealtime">Real-time telemetry</li>
+            </ul>
+          </article>
+
+          <!-- Satellite -->
+          <article class="card page-card reveal">
+            <div class="entry-head">
+              <h3 data-i18n="proj.satTitle">Satellite Image Classification</h3>
+              <span class="entry-meta" data-i18n="proj.satMeta">Jan 2026 · Madrid</span>
+            </div>
+            <p class="entry-org">CNN vs ResNet vs EfficientNet</p>
+            <ul>
+              <li data-i18n="proj.sat1">Developed and evaluated deep-learning models (CNN, ResNet, EfficientNet) in PyTorch for satellite image classification.</li>
+              <li data-i18n="proj.sat2">Improved classification accuracy by comparing architectures and tuning hyperparameters.</li>
+              <li data-i18n="proj.sat3">Analyzed the trade-offs between model performance and computational cost.</li>
+            </ul>
+            <ul class="tags">
+              <li>PyTorch</li>
+              <li>Deep Learning</li>
+              <li>Computer Vision</li>
+            </ul>
+          </article>
+
+          <!-- Trasemisa -->
+          <article class="card page-card reveal">
+            <div class="entry-head">
+              <h3>Trasemisa</h3>
+              <span class="entry-meta" data-i18n="proj.traMeta">Jan – Jun 2024 · Madrid</span>
+            </div>
+            <p class="entry-org">IEU Strategy Lab</p>
+            <ul>
+              <li data-i18n="proj.tra1">Analyzed operational datasets with Python (Pandas) and Excel to identify inefficiencies and support strategic decisions.</li>
+              <li data-i18n="proj.tra2">Cleaned and structured datasets with SQL and Python to enable downstream analysis and reporting.</li>
+            </ul>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Pandas</li>
+              <li>SQL</li>
+              <li>Excel</li>
+              <li data-i18n="proj.tagStrategy">Strategy</li>
+            </ul>
+          </article>
+
+          <!-- Clínica Aragonés 2023 -->
+          <article class="card page-card reveal">
+            <div class="entry-head">
+              <h3>Clínica Aragonés</h3>
+              <span class="entry-meta" data-i18n="proj.araMeta">Jun – Aug 2023 · Buenos Aires</span>
+            </div>
+            <p class="entry-org" data-i18n="proj.araRole">Brand &amp; digital strategy</p>
+            <ul>
+              <li data-i18n="proj.ara1">Developed the clinic's brand image and marketing strategy, and designed a prototype for its website.</li>
+            </ul>
+            <ul class="tags">
+              <li data-i18n="proj.tagBranding">Branding</li>
+              <li>Marketing</li>
+              <li data-i18n="proj.tagWeb">Web prototype</li>
+            </ul>
+          </article>
+
+          <!-- Seaplace -->
+          <article class="card page-card reveal">
+            <div class="entry-head">
+              <h3>Seaplace</h3>
+              <span class="entry-meta" data-i18n="proj.seaMeta">Jan – Jun 2023 · Madrid</span>
+            </div>
+            <p class="entry-org">IEU Branding Lab</p>
+            <ul>
+              <li data-i18n="proj.sea1">Worked on the company's brand identity and strategy documentation as part of a student consulting team.</li>
+            </ul>
+            <ul class="tags">
+              <li data-i18n="proj.tagBranding">Branding</li>
+              <li data-i18n="proj.tagStrategy">Strategy</li>
+            </ul>
+          </article>
+        </div>
+
+        <section class="card cta reveal">
+          <div>
+            <h2 data-i18n="cta.title">Want the full picture?</h2>
+            <p data-i18n="cta.text">Download my CV or get in touch — I'm happy to walk you through any of these projects.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn--primary" href="docs/Lucas-Vucinovich-CV.pdf" download>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span data-i18n="cta.download">Download CV (PDF)</span>
+            </a>
+            <a class="btn" href="contact.html" data-i18n="cta.contact">Contact me</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span data-year>2026</span> Lucas A. Vucinovich</p>
+        <div class="footer-links">
+          <a href="mailto:lvucinovich.ieu2022@student.ie.edu">Email</a>
+          <a href="https://www.linkedin.com/in/lucas-agustin-vucinovich/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/lucasvucinovich" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="JS/i18n.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

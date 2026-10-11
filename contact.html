@@ -1,45 +1,163 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas — About</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="title.contact">Contact — Lucas A. Vucinovich</title>
+    <meta name="description" content="Contact Lucas A. Vucinovich: email, phone, LinkedIn and GitHub." />
+    <meta name="theme-color" content="#976841" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23f4dcb5'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='700' text-anchor='middle' fill='%233f2614'%3ELV%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script>
+      (function () {
+        var d = document.documentElement, l;
+        d.classList.add("js");
+        try { l = localStorage.getItem("cv-lang"); } catch (e) {}
+        if (!l) l = (navigator.language || "").slice(0, 2) === "es" ? "es" : "en";
+        if (l === "es") {
+          d.lang = "es";
+          d.classList.add("i18n-pending");
+          setTimeout(function () { d.classList.remove("i18n-pending"); }, 1500);
+        }
+      })();
+    </script>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="CSS\style.css" />
-</head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
-<body>
-  <div class="wrap">
-    <header class="page-header">
-      <div>
-        <h1>Lucas</h1>
-        <p class="subtitle">About Me</p>
-      </div>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">LV</span>
+          <span class="brand-name">Lucas A. Vucinovich</span>
+        </a>
+        <nav class="site-nav" aria-label="Main" data-i18n-attr="aria-label:nav.label">
+          <a href="aboutme.html" data-i18n="nav.about">About</a>
+          <a href="education.html" data-i18n="nav.education">Education</a>
+          <a href="projects.html" data-i18n="nav.projects">Experience</a>
+          <a href="skills.html" data-i18n="nav.skills">Skills</a>
+          <a href="certifications.html" data-i18n="nav.achievements">Achievements</a>
+          <a href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language / Idioma">
+          <button type="button" data-lang="es" lang="es" aria-pressed="false" title="Ver en español">ES</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="true" title="View in English">EN</button>
+        </div>
+      </header>
 
-      <a class="back-link" href="index.html">← Back home</a>
-    </header>
+      <main id="main">
+        <section class="page-hero reveal">
+          <p class="eyebrow" data-i18n="nav.contact">Contact</p>
+          <h1 data-i18n="contact.title">Let's talk</h1>
+          <p class="lead" data-i18n="contact.lead">
+            I'm open to internship opportunities in data, AI, product and consulting. Email is the best way to
+            reach me, and I'll get back to you as soon as I can.
+          </p>
+        </section>
 
-<main class="page">
-  <div class="card page-card">
-    <h2>Contact</h2>
-    <ul>
-      <li><strong>Location:</strong> Madrid, Spain</li>
-      <li><strong>Phone (Spain):</strong> +34 635 310 363</li>
-      <li><strong>Phone (Argentina):</strong> +54 9 11 2178 0726</li>
-      <li>
-        <strong>Email:</strong>
-        <a href="mailto:lvucinovich.ieu2022@student.ie.edu">lvucinovich.ieu2022@student.ie.edu</a>
-      </li>
-      <li><strong>LinkedIn:</strong> <a href="#">Add your LinkedIn URL here</a></li>
-    </ul>
-  </div>
-</main>
-</div>
-</body>
+        <div class="grid">
+          <article class="card page-card reveal">
+            <h2 data-i18n="contact.detailsTitle">Contact details</h2>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                <a href="mailto:lvucinovich.ieu2022@student.ie.edu" style="text-decoration: none">
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">lvucinovich.ieu2022@student.ie.edu</span>
+                </a>
+                <button type="button" class="btn copy-btn" data-copy="lvucinovich.ieu2022@student.ie.edu">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span data-copy-label data-i18n="contact.copy">Copy</span>
+                </button>
+              </li>
+              <li>
+                <a class="contact-item" href="tel:+34635310363">
+                  <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                  <span>
+                    <span class="contact-label" data-i18n="contact.phoneEs">Phone · Spain</span>
+                    <span class="contact-value">+34 635 310 363</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-item" href="tel:+5491121780726">
+                  <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                  <span>
+                    <span class="contact-label" data-i18n="contact.phoneAr">Phone · Argentina</span>
+                    <span class="contact-value">+54 9 11 2178 0726</span>
+                  </span>
+                </a>
+              </li>
+              <li class="contact-item">
+                <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <span>
+                  <span class="contact-label" data-i18n="contact.location">Location</span>
+                  <span class="contact-value" data-i18n="home.factLocation">Madrid, Spain</span>
+                </span>
+              </li>
+            </ul>
+          </article>
+
+          <div class="page">
+            <article class="card page-card reveal">
+              <h2 data-i18n="contact.onlineTitle">Find me online</h2>
+              <ul class="contact-list">
+                <li>
+                  <a class="contact-item" href="https://www.linkedin.com/in/lucas-agustin-vucinovich/" target="_blank" rel="noopener">
+                    <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+                    <span>
+                      <span class="contact-label">LinkedIn</span>
+                      <span class="contact-value">in/lucas-agustin-vucinovich</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="contact-item" href="https://github.com/lucasvucinovich" target="_blank" rel="noopener">
+                    <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span>
+                    <span>
+                      <span class="contact-label">GitHub</span>
+                      <span class="contact-value">github.com/lucasvucinovich</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </article>
+
+            <article class="card page-card reveal">
+              <h2 data-i18n="contact.cvTitle">Prefer a PDF?</h2>
+              <p data-i18n="contact.cvText">Download the one-page version of my CV.</p>
+              <div class="actions" style="margin-top: 18px">
+                <a class="btn btn--primary" href="docs/Lucas-Vucinovich-CV.pdf" download>
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span data-i18n="cta.download">Download CV (PDF)</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span data-year>2026</span> Lucas A. Vucinovich</p>
+        <div class="footer-links">
+          <a href="mailto:lvucinovich.ieu2022@student.ie.edu">Email</a>
+          <a href="https://www.linkedin.com/in/lucas-agustin-vucinovich/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/lucasvucinovich" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="JS/i18n.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
 </html>

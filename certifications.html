@@ -1,49 +1,149 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas — About</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="title.achievements">Achievements — Lucas A. Vucinovich</title>
+    <meta name="description" content="Awards, competitions, courses and certifications of Lucas A. Vucinovich." />
+    <meta name="theme-color" content="#976841" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23f4dcb5'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='700' text-anchor='middle' fill='%233f2614'%3ELV%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script>
+      (function () {
+        var d = document.documentElement, l;
+        d.classList.add("js");
+        try { l = localStorage.getItem("cv-lang"); } catch (e) {}
+        if (!l) l = (navigator.language || "").slice(0, 2) === "es" ? "es" : "en";
+        if (l === "es") {
+          d.lang = "es";
+          d.classList.add("i18n-pending");
+          setTimeout(function () { d.classList.remove("i18n-pending"); }, 1500);
+        }
+      })();
+    </script>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="CSS\style.css" />
-</head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
-<body>
-  <div class="wrap">
-    <header class="page-header">
-      <div>
-        <h1>Lucas</h1>
-        <p class="subtitle">Certifications</p>
-      </div>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">LV</span>
+          <span class="brand-name">Lucas A. Vucinovich</span>
+        </a>
+        <nav class="site-nav" aria-label="Main" data-i18n-attr="aria-label:nav.label">
+          <a href="aboutme.html" data-i18n="nav.about">About</a>
+          <a href="education.html" data-i18n="nav.education">Education</a>
+          <a href="projects.html" data-i18n="nav.projects">Experience</a>
+          <a href="skills.html" data-i18n="nav.skills">Skills</a>
+          <a href="certifications.html" aria-current="page" data-i18n="nav.achievements">Achievements</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language / Idioma">
+          <button type="button" data-lang="es" lang="es" aria-pressed="false" title="Ver en español">ES</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="true" title="View in English">EN</button>
+        </div>
+      </header>
 
-      <a class="back-link" href="index.html">← Back home</a>
-    </header>
+      <main id="main">
+        <section class="page-hero reveal">
+          <p class="eyebrow" data-i18n="ach.eyebrow">Achievements &amp; Certifications</p>
+          <h1 data-i18n="ach.title">Recognition along the way</h1>
+          <p class="lead" data-i18n="ach.lead">
+            Competitions, awards and courses that pushed me to learn faster and compete with the best.
+          </p>
+        </section>
 
-<main class="page">
-  <div class="card page-card">
-    <h2>Competitions / Seminars</h2>
-    <ul>
-      <li>CSP Barista Skills-Foundation (CSP, Buenos Aires - Dec 2025)</li>
-      <li>Advanced Trading Course (NW Trading, Buenos Aires — Aug-Sep 2023)</li>
-      <li>Machine Learning seminar (IEU — Nov 2023)</li>
-    </ul>
-  </div>
-  <div class="card page-card">
-    <h2>Competitions & Achievements</h2>
-    <ul>
-      <li>3rd prize — Ryanair Datathon (Madrid, Feb 2024)</li>
-      <li>Recognized in a statistics competition (Madrid, May 2024)</li>
-      <li>Top ten promising young marketing talents in Spain (May 2024)</li>
-      <li>Data Visualization competition (IEU — Apr 2023)</li>
-    </ul>
-  </div>
-</main>
-</div>
-</body>
+        <h2 class="section-title reveal" style="margin-top: 0" data-i18n="ach.awardsTitle">Awards &amp; competitions</h2>
+
+        <div class="grid">
+          <article class="card achievement reveal">
+            <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+            <div>
+              <h3 data-i18n="ach.ryanairTitle">3rd prize — Ryanair Datathon</h3>
+              <span class="entry-meta" data-i18n="ach.ryanairMeta">Madrid · Feb 2024</span>
+              <p data-i18n="ach.ryanair">Third place in a data science competition organized by Ryanair.</p>
+            </div>
+          </article>
+
+          <article class="card achievement reveal">
+            <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+            <div>
+              <h3 data-i18n="ach.hpeTitle">Semi-finalist — HPE CDS Tech Challenge</h3>
+              <span class="entry-meta" data-i18n="ach.hpeMeta">Madrid · 2024</span>
+              <p data-i18n="ach.hpe">Advanced to the semi-finals of a multi-phase national competition with 325+ students, organized by Hewlett Packard Enterprise.</p>
+            </div>
+          </article>
+
+          <article class="card achievement reveal">
+            <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span>
+            <div>
+              <h3 data-i18n="ach.mktTitle">Top 10 young marketing talents in Spain</h3>
+              <span class="entry-meta" data-i18n="ach.mktMeta">Madrid · May 2024</span>
+              <p data-i18n="ach.mkt">Named among the ten most promising young marketing talents in Spain in a marketing competition.</p>
+            </div>
+          </article>
+
+          <article class="card achievement reveal">
+            <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+            <div>
+              <h3 data-i18n="ach.statsTitle">Statistics competition recognition</h3>
+              <span class="entry-meta" data-i18n="ach.statsMeta">Madrid · May 2024</span>
+              <p data-i18n="ach.stats">Recognized for an essay on predictive analytics.</p>
+            </div>
+          </article>
+
+          <article class="card achievement card--wide reveal">
+            <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></span>
+            <div>
+              <h3 data-i18n="ach.vizTitle">Data Visualization Competition</h3>
+              <span class="entry-meta" data-i18n="ach.vizMeta">IE University, Madrid · Apr 2023</span>
+              <p data-i18n="ach.viz">Took part in IE University's data visualization competition.</p>
+            </div>
+          </article>
+        </div>
+
+        <h2 class="section-title reveal" data-i18n="ach.coursesTitle">Courses &amp; certifications</h2>
+
+        <div class="grid grid--3">
+          <article class="card page-card reveal">
+            <h3 data-i18n="ach.mlTitle">Machine Learning Seminar</h3>
+            <span class="entry-meta" data-i18n="ach.mlMeta">IE University · Nov 2023</span>
+          </article>
+
+          <article class="card page-card reveal">
+            <h3 data-i18n="ach.tradingTitle">Advanced Trading Course</h3>
+            <span class="entry-meta" data-i18n="ach.tradingMeta">NW Trading, Buenos Aires · Aug – Sep 2023</span>
+          </article>
+
+          <article class="card page-card reveal">
+            <h3>CSP Barista Skills – Foundation</h3>
+            <span class="entry-meta" data-i18n="ach.baristaMeta">Buenos Aires · Dec 2025</span>
+          </article>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span data-year>2026</span> Lucas A. Vucinovich</p>
+        <div class="footer-links">
+          <a href="mailto:lvucinovich.ieu2022@student.ie.edu">Email</a>
+          <a href="https://www.linkedin.com/in/lucas-agustin-vucinovich/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/lucasvucinovich" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="JS/i18n.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
 </html>

@@ -3,92 +3,228 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucas — CV</title>
+    <title data-i18n="title.home">Lucas A. Vucinovich — CV</title>
+    <meta
+      name="description"
+      content="Lucas A. Vucinovich — Business Administration and Data & Analytics student at IE University who builds AI-powered products end to end. Creator of CareLoop."
+    />
+    <meta name="author" content="Lucas A. Vucinovich" />
+    <meta name="theme-color" content="#976841" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Lucas A. Vucinovich — CV" />
+    <meta
+      property="og:description"
+      content="Business & Data Analytics student at IE University building AI-powered products. Creator of CareLoop."
+    />
+    <meta property="og:url" content="https://lucasvucinovich.github.io/CV-web-page/" />
+    <meta property="og:image" content="https://lucasvucinovich.github.io/CV-web-page/imagenes/in_image.jpeg" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23f4dcb5'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='700' text-anchor='middle' fill='%233f2614'%3ELV%3C/text%3E%3C/svg%3E"
+    />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS\style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Resolve language before first paint (saved choice > browser language > English) -->
+    <script>
+      (function () {
+        var d = document.documentElement, l;
+        d.classList.add("js");
+        try { l = localStorage.getItem("cv-lang"); } catch (e) {}
+        if (!l) l = (navigator.language || "").slice(0, 2) === "es" ? "es" : "en";
+        if (l === "es") {
+          d.lang = "es";
+          d.classList.add("i18n-pending");
+          setTimeout(function () { d.classList.remove("i18n-pending"); }, 1500);
+        }
+      })();
+    </script>
   </head>
 
   <body>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
     <div class="wrap">
-      <header>
-        <h1>Lucas</h1>
-        <p class="subtitle">Lucas's CV — Home</p>
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-current="page">
+          <span class="brand-mark" aria-hidden="true">LV</span>
+          <span class="brand-name">Lucas A. Vucinovich</span>
+        </a>
+        <nav class="site-nav" aria-label="Main" data-i18n-attr="aria-label:nav.label">
+          <a href="aboutme.html" data-i18n="nav.about">About</a>
+          <a href="education.html" data-i18n="nav.education">Education</a>
+          <a href="projects.html" data-i18n="nav.projects">Experience</a>
+          <a href="skills.html" data-i18n="nav.skills">Skills</a>
+          <a href="certifications.html" data-i18n="nav.achievements">Achievements</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language / Idioma">
+          <button type="button" data-lang="es" lang="es" aria-pressed="false" title="Ver en español">ES</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="true" title="View in English">EN</button>
+        </div>
       </header>
 
+      <main id="main">
+        <!-- Intro -->
+        <section class="intro">
+          <div class="hero-image reveal">
+            <img
+              src="imagenes/in_image.jpeg"
+              width="1200"
+              height="1600"
+              alt="Portrait of Lucas A. Vucinovich"
+              data-i18n-attr="alt:home.photoAlt"
+            />
+          </div>
 
+          <div class="intro-text reveal">
+            <p class="status">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span data-i18n="home.status">Open to internship opportunities</span>
+            </p>
+            <h1>Lucas A. Vucinovich</h1>
+            <p class="role" data-i18n="home.role">Business &amp; Data Analytics student · AI product builder</p>
+            <p class="lead" data-i18n="home.lead">
+              Business Administration and Data &amp; Analytics student at IE University who builds AI-powered
+              products end to end — from <strong>CareLoop</strong>, an AI operations platform for a dental clinic,
+              to a real-time digital twin for emergency drone operations. I combine business judgment with
+              hands-on engineering in Python, SQL, TypeScript and React to turn complex operational problems into
+              practical solutions.
+            </p>
 
-      <section class="intro">
-        <div class="hero-image">
-            <img src="imagenes\in_image.jpeg" alt="Lucas portrait" />
-        </div>
-        <div class="intro-text">
-          <h2>About Me</h2>
-          <p>
-            <strong>Hello, I'm Lucas.</strong><br />
-            I am a business and data analytics student at IE University with a strong
-            interest in technology, strategy, and data-driven decision making.
-            I enjoy working at the intersection of business and analytics, where
-            structured thinking, creativity, and problem-solving come together.
+            <ul class="facts">
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span data-i18n="home.factLocation">Madrid, Spain</span>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="home.factPermit">EU work permit</span>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span data-i18n="home.factLangs">Spanish · English · French</span>
+              </li>
+            </ul>
+
+            <div class="actions">
+              <a class="btn btn--primary" href="docs/Lucas-Vucinovich-CV.pdf" download>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span data-i18n="cta.download">Download CV (PDF)</span>
+              </a>
+              <a class="btn" href="https://www.linkedin.com/in/lucas-agustin-vucinovich/" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a class="btn" href="https://github.com/lucasvucinovich" target="_blank" rel="noopener">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured: CareLoop -->
+        <section class="card featured reveal" aria-labelledby="careloop-title">
+          <div class="featured-head">
+            <span class="badge">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span data-i18n="featured.badge">Featured project</span>
+            </span>
+            <span class="entry-meta" data-i18n="careloop.meta">May – Oct 2026 · Buenos Aires, Argentina</span>
+          </div>
+
+          <h2 id="careloop-title">CareLoop</h2>
+          <p class="featured-sub" data-i18n="careloop.sub">AI operations platform for Clínica Aragonés, a dental clinic</p>
+          <p class="featured-desc" data-i18n="careloop.descShort">
+            An AI coordination layer that works alongside the clinic's records system: it tracks multi-step
+            treatments and specialist referrals, turns doctor dictation into structured records and treatment plans,
+            and automates patient reminders and no-show follow-ups over WhatsApp.
           </p>
-      
-          <p>
-            Through academic projects, competitions, and practical experiences, I have
-            developed solid analytical skills alongside strong teamwork and leadership
-            abilities. I am particularly motivated by environments that challenge me
-            intellectually and allow me to contribute to impactful, technology-driven
-            solutions.
-          </p>
+
+          <ul class="stats">
+            <li><span class="stat-value">900+</span><span class="stat-label" data-i18n="careloop.stat1">automated tests (Vitest, Playwright)</span></li>
+            <li><span class="stat-value">3</span><span class="stat-label" data-i18n="careloop.stat2">role-based apps for secretaries, doctors and admins</span></li>
+            <li><span class="stat-value" data-i18n="careloop.stat3v">Voice → data</span><span class="stat-label" data-i18n="careloop.stat3">dictation becomes records, quotes and treatment plans</span></li>
+            <li><span class="stat-value">OSDE · AFIP</span><span class="stat-label" data-i18n="careloop.stat4">insurance billing and e-invoicing, automated</span></li>
+          </ul>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="projects.html#careloop">
+              <span data-i18n="featured.more">See project details</span>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </section>
+
+        <!-- Explore -->
+        <h2 class="section-title reveal" data-i18n="home.explore">Explore my CV</h2>
+
+        <div class="grid grid--3">
+          <a class="card card--link reveal" href="aboutme.html">
+            <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+            <h2 data-i18n="nav.about">About</h2>
+            <p data-i18n="home.cardAbout">Profile, what I'm looking for, languages and international experience.</p>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="card card--link reveal" href="education.html">
+            <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>
+            <h2 data-i18n="nav.education">Education</h2>
+            <p data-i18n="home.cardEducation">IE University dual degree, University of Michigan exchange and the French Baccalaureate.</p>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="card card--link reveal" href="projects.html">
+            <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+            <h2 data-i18n="home.cardProjectsTitle">Experience &amp; Projects</h2>
+            <p data-i18n="home.cardProjects">CareLoop, a drone digital twin, deep-learning research and strategy consulting labs.</p>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="card card--link reveal" href="skills.html">
+            <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+            <h2 data-i18n="nav.skills">Skills</h2>
+            <p data-i18n="home.cardSkills">Programming, AI &amp; machine learning, web development, data tools and soft skills.</p>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="card card--link reveal" href="certifications.html">
+            <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></span>
+            <h2 data-i18n="home.cardAchievementsTitle">Achievements</h2>
+            <p data-i18n="home.cardAchievements">Ryanair datathon prize, HPE Tech Challenge semi-final, competitions and courses.</p>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="card card--link reveal" href="contact.html">
+            <span class="card-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+            <h2 data-i18n="nav.contact">Contact</h2>
+            <p data-i18n="home.cardContact">Email, phone, LinkedIn and GitHub — let's talk.</p>
+            <span class="card-arrow" aria-hidden="true">→</span>
+          </a>
         </div>
-      </section>
+      </main>
 
-
-    <main class="grid">
-      <a class="card card--link" href="aboutme.html">
-        <img src="imagenes/icons8-customer-52.png" alt="" class="card-icon-between" />
-        <h2>About Me</h2>
-        <p>Summary + what I'm looking for</p>
-      </a>
-
-      <a class="card card--link" href="education.html">
-        <h2>Education</h2>
-        <p>IE University + school background.</p>
-      </a>
-
-      <a class="card card--link" href="skills.html">
-        <h2>Skills</h2>
-        <p>Tech + soft skills.</p>
-      </a>
-
-      <a class="card card--link" href="certifications.html">
-        <h2>Certifications</h2>
-        <p>?????????????</p>
-      </a>
-
-      <a class="card card--link card--wide" href="projects.html">
-        <h2>Projects</h2>
-        <p>????????????</p>
-      </a>
-
-      <a class="card card--link card--wide card--contact" href="contact.html">
-        <h2>Contact Information</h2>
-        <p>Email, phone numbers, LinkedIn, location.</p>
-      </a>
-    </main>
-
+      <footer class="site-footer">
+        <p>© <span data-year>2026</span> Lucas A. Vucinovich</p>
+        <div class="footer-links">
+          <a href="mailto:lvucinovich.ieu2022@student.ie.edu">Email</a>
+          <a href="https://www.linkedin.com/in/lucas-agustin-vucinovich/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/lucasvucinovich" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </footer>
     </div>
 
-    <!-- JS -->
-    <script src="JS\main.js"></script>
+    <script src="JS/i18n.js"></script>
+    <script src="JS/main.js"></script>
   </body>
 </html>
-
-

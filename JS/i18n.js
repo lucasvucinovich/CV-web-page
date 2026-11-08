@@ -40,14 +40,14 @@ window.CV_ES = {
 
   /* ---------- Home ---------- */
   "home.photoAlt": "Retrato de Lucas A. Vucinovich",
-  "home.status": "Disponible para prácticas",
-  "home.role": "Estudiante de Business &amp; Data Analytics · Creo productos con IA",
+  "home.status": "Abierto a puestos graduate 2027 y prácticas a media jornada",
+  "home.role": "Construyo agentes de IA que operan de verdad · Business &amp; Data Analytics en IE",
   "home.lead":
-    "Estudiante del doble grado en Administración de Empresas y Data &amp; Analytics en IE University. " +
-    "Desarrollo productos con IA de principio a fin: desde <strong>CareLoop</strong>, una plataforma de " +
-    "operaciones con IA para una clínica dental, hasta un gemelo digital en tiempo real para operaciones de " +
-    "drones de emergencia. Combino visión de negocio con ingeniería práctica en Python, SQL, TypeScript y " +
-    "React para convertir problemas operativos complejos en soluciones concretas.",
+    "Construyo agentes de IA que hacen trabajo real, y me importa tanto el resultado de negocio como el código. " +
+    "Fundador y desarrollador de <strong>CareLoop</strong>, una plataforma de operaciones con IA en producción en " +
+    "una clínica dental: su agente de voz convierte el dictado de los médicos en historias, presupuestos y planes " +
+    "de tratamiento, apoyado en los datos de cada paciente (RAG), con evals y guardrails deterministas. Termino el " +
+    "doble grado en Administración de Empresas y Data &amp; Analytics en IE University (mayo de 2027).",
   "home.factLocation": "Madrid, España",
   "home.factPermit": "Permiso de trabajo UE",
   "home.factLangs": "Español · Inglés · Francés",
@@ -64,17 +64,18 @@ window.CV_ES = {
   /* ---------- CareLoop ---------- */
   "featured.badge": "Proyecto destacado",
   "featured.more": "Ver detalles del proyecto",
-  "careloop.meta": "may – oct 2026 · Buenos Aires, Argentina",
+  "careloop.meta": "may 2026 – actualidad · Buenos Aires, Argentina (remoto)",
   "careloop.sub": "Plataforma de operaciones con IA para Clínica Aragonés, una clínica dental",
   "careloop.descShort":
-    "Una capa de coordinación con IA que funciona junto al sistema de historias clínicas: hace seguimiento de " +
-    "tratamientos de varias etapas y derivaciones a especialistas, convierte el dictado de los médicos en " +
-    "registros estructurados y planes de tratamiento, y automatiza recordatorios a pacientes y el seguimiento " +
-    "de ausencias por WhatsApp.",
+    "En producción en la clínica. Lumi, su agente de voz (Claude API, Whisper), clasifica cada dictado en 10 " +
+    "flujos, recupera la historia y la cobertura del paciente correcto (RAG) y redacta de una vez la historia " +
+    "clínica, el presupuesto y el plan de tratamiento; si faltan datos, deriva al personal. También gestiona " +
+    "recordatorios y seguimientos por WhatsApp.",
   "careloop.desc":
-    "Diseñé y desarrollé CareLoop de principio a fin: una capa de coordinación con IA que funciona junto al " +
-    "sistema de historias clínicas de la clínica para que ningún tratamiento, derivación o seguimiento se " +
-    "pierda, y para que los médicos dediquen menos tiempo al papeleo y más a sus pacientes.",
+    "Diseñé y desarrollé CareLoop de principio a fin como fundador en solitario, y funciona en producción en la " +
+    "clínica. Empecé por el discovery: sentarme con médicos y secretarias para mapear sus procesos reales. Después " +
+    "construí una capa de IA junto a su sistema de historias clínicas para que ningún tratamiento, derivación o " +
+    "seguimiento se pierda, y para que los médicos dediquen menos tiempo al papeleo y más a sus pacientes.",
   "careloop.stat1": "tests automatizados (Vitest, Playwright)",
   "careloop.stat2": "apps por rol para secretarias, médicos y administración",
   "careloop.stat3v": "Voz → datos",
@@ -82,10 +83,10 @@ window.CV_ES = {
   "careloop.stat4": "facturación a obras sociales y prepagas, y factura electrónica automatizada",
   "careloop.builtTitle": "Qué construí",
   "careloop.b1": "Una capa de coordinación que sigue tratamientos de varias etapas y derivaciones a especialistas junto al sistema de historias clínicas.",
-  "careloop.b2": "Un asistente de IA (Claude API, Whisper) que convierte el dictado de los médicos en historias clínicas estructuradas, presupuestos y planes de tratamiento.",
+  "careloop.b2": "Lumi, un agente de voz (Claude API, Whisper) que clasifica cada dictado en 10 flujos, recupera el contexto del paciente (RAG) y redacta de una vez historias clínicas, presupuestos y planes de tratamiento, derivando al personal cuando faltan datos.",
   "careloop.b3": "Recordatorios automáticos a pacientes y seguimiento de ausencias mediante la WhatsApp Cloud API.",
   "careloop.b4": "Facturación automatizada a obras sociales y prepagas, y factura electrónica (OSDE, AFIP), con apps por rol para secretarias, médicos y administración.",
-  "careloop.b5": "Una red de seguridad de más de 900 tests automatizados unitarios y end-to-end (Vitest, Playwright).",
+  "careloop.b5": "Un estándar de calidad para el agente: evals con conversaciones de referencia, más de 6.000 tests automatizados (Vitest, Playwright) y guardrails deterministas que dejan precios y copagos fuera del LLM.",
 
   /* ---------- About ---------- */
   "about.eyebrow": "Sobre mí",
@@ -107,8 +108,9 @@ window.CV_ES = {
     "rigor analítico con trabajo en equipo y comunicación clara.",
   "about.lookingTitle": "Qué busco",
   "about.looking":
-    "Prácticas en datos e IA, producto, analítica y consultoría tecnológica: equipos donde pueda hacerme cargo " +
-    "de problemas de principio a fin y convertir datos en decisiones y en software que funciona.",
+    "Puestos graduate desde el verano de 2027 (Agent Strategist, Deployment Strategist, Forward Deployed, " +
+    "Solutions) y prácticas a media jornada hasta entonces, en equipos donde pueda hacerme cargo de problemas de " +
+    "principio a fin y convertir la IA en software que mueve una métrica de negocio.",
   "about.eligibilityTitle": "Elegibilidad",
   "about.elig1": "Puedo firmar convenios de prácticas a través de IE University",
   "about.elig2": "Permiso de trabajo en la UE",
@@ -198,10 +200,10 @@ window.CV_ES = {
   "ach.lead": "Competiciones, premios y cursos que me impulsaron a aprender más rápido y a competir con los mejores.",
   "ach.awardsTitle": "Premios y competiciones",
   "ach.ryanairTitle": "3.er premio — Datathon de Ryanair",
-  "ach.ryanairMeta": "Madrid · feb 2024",
+  "ach.ryanairMeta": "Madrid · mar 2024",
   "ach.ryanair": "Tercer puesto en una competición de ciencia de datos organizada por Ryanair.",
   "ach.hpeTitle": "Semifinalista — HPE CDS Tech Challenge",
-  "ach.hpeMeta": "Madrid · 2024",
+  "ach.hpeMeta": "Madrid · mar 2026",
   "ach.hpe": "Llegué a las semifinales de una competición nacional en varias fases, con más de 325 estudiantes, organizada por Hewlett Packard Enterprise.",
   "ach.mktTitle": "Top 10 jóvenes talentos del marketing en España",
   "ach.mktMeta": "Madrid · may 2024",
@@ -222,7 +224,7 @@ window.CV_ES = {
   /* ---------- Contact ---------- */
   "contact.title": "Hablemos",
   "contact.lead":
-    "Estoy abierto a prácticas en datos, IA, producto y consultoría. El email es la mejor forma de contactarme " +
+    "Estoy abierto a puestos graduate 2027 y prácticas a media jornada en despliegue de IA, producto, datos y consultoría. El email es la mejor forma de contactarme " +
     "y responderé lo antes posible.",
   "contact.detailsTitle": "Datos de contacto",
   "contact.copy": "Copiar",
